@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html lang="en-GB">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio - Silkstone Studio</title>
+    <meta name="description" content="Explore Silkstone Studio's portfolio of luxury interior design projects across London. Residential and commercial spaces showcasing bespoke design excellence.">
+    <meta property="og:title" content="Portfolio - Silkstone Studio">
+    <meta property="og:description" content="Explore our portfolio of luxury interior design projects across London.">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header class="header">
+        <div class="container">
+            <div class="header-content">
+                <div class="logo">
+                    <h1><a href="index.html">Silkstone Studio</a></h1>
+                    <p class="tagline">Bespoke Interior Design & Visualisation</p>
+                </div>
+                <nav class="nav" role="navigation">
+                    <button class="nav-toggle" aria-label="Toggle navigation">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </button>
+                    <ul class="nav-menu" role="menubar">
+                        <li role="none"><a href="index.html" role="menuitem" class="nav-link">Home</a></li>
+                        <li role="none"><a href="about.html" role="menuitem" class="nav-link">About</a></li>
+                        <li role="none"><a href="portfolio.html" role="menuitem" class="nav-link active">Portfolio</a></li>
+                        <li role="none"><a href="bespoke-furniture.html" role="menuitem" class="nav-link">Bespoke Furniture</a></li>
+                        <li role="none"><a href="contact.html" role="menuitem" class="nav-link">Contact</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <section class="page-hero">
+            <div class="container">
+                <div class="hero-content animate-slide-up">
+                    <h1>Our Portfolio</h1>
+                    <p class="hero-subtitle">A curated selection of our most distinguished projects</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="portfolio-section">
+            <div class="container">
+                <div class="portfolio-filters animate-fade-in">
+                    <button class="filter-btn active" data-filter="all">All Projects</button>
+                    <button class="filter-btn" data-filter="residential">Residential</button>
+                    <button class="filter-btn" data-filter="commercial">Commercial</button>
+                </div>
+
+                <div class="portfolio-grid" id="portfolio-grid">
+                    <div class="portfolio-card animate-fade-in" data-category="residential" data-project="mayfair-penthouse">
+                        <div class="card-gradient residential-gradient"></div>
+                        <div class="card-content">
+                            <div class="card-header">
+                                <h3>Mayfair Penthouse</h3>
+                                <span class="location">Mayfair, London</span>
+                            </div>
+                            <p class="project-type">Residential</p>
+                            <p class="project-description">Contemporary luxury apartment with panoramic city views and bespoke joinery.</p>
+                            <div class="project-tags">
+                                <span class="tag">CGI</span>
+                                <span class="tag">Bespoke Joinery</span>
+                                <span class="tag">360° Panoramas</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="portfolio-card animate-fade-in" data-category="residential" data-project="chelsea-townhouse">
+                        <div class="card-gradient residential-gradient"></div>
+                        <div class="card-content">
+                            <div class="card-header">
+                                <h3>Chelsea Townhouse</h3>
+                                <span class="location">Chelsea, London</span>
+                            </div>
+                            <p class="project-type">Residential</p>
+                            <p class="project-description">Period restoration combining heritage features with contemporary elegance.</p>
+                            <div class="project-tags">
+                                <span class="tag">Heritage Restoration</span>
+                                <span class="tag">Custom Furniture</span>
+                                <span class="tag">Project Management</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="portfolio-card animate-fade-in" data-category="commercial" data-project="canary-wharf-office">
+                        <div class="card-gradient commercial-gradient"></div>
+                        <div class="card-content">
+                            <div class="card-header">
+                                <h3>Canary Wharf Executive Office</h3>
+                                <span class="location">Canary Wharf, London</span>
+                            </div>
+                            <p class="project-type">Commercial</p>
+                            <p class="project-description">Modern executive workspace designed for productivity and prestige.</p>
+                            <div class="project-tags">
+                                <span class="tag">Workspace Design</span>
+                                <span class="tag">CGI Visualisation</span>
+                                <span class="tag">Custom Millwork</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="portfolio-card animate-fade-in" data-category="residential" data-project="kensington-residence">
+                        <div class="card-gradient residential-gradient"></div>
+                        <div class="card-content">
+                            <div class="card-header">
+                                <h3>Kensington Family Residence</h3>
+                                <span class="location">Kensington, London</span>
+                            </div>
+                            <p class="project-type">Residential</p>
+                            <p class="project-description">Elegant family home featuring custom furniture and child-friendly design.</p>
+                            <div class="project-tags">
+                                <span class="tag">Family Living</span>
+                                <span class="tag">Bespoke Furniture</span>
+                                <span class="tag">360° Tours</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="portfolio-card animate-fade-in" data-category="commercial" data-project="shoreditch-showroom">
+                        <div class="card-gradient commercial-gradient"></div>
+                        <div class="card-content">
+                            <div class="card-header">
+                                <h3>Shoreditch Design Showroom</h3>
+                                <span class="location">Shoreditch, London</span>
+                            </div>
+                            <p class="project-type">Commercial</p>
+                            <p class="project-description">Industrial-chic showroom highlighting contemporary furniture collections.</p>
+                            <div class="project-tags">
+                                <span class="tag">Retail Design</span>
+                                <span class="tag">Industrial Style</span>
+                                <span class="tag">Display Systems</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="portfolio-card animate-fade-in" data-category="residential" data-project="notting-hill-flat">
+                        <div class="card-gradient residential-gradient"></div>
+                        <div class="card-content">
+                            <div class="card-header">
+                                <h3>Notting Hill Garden Flat</h3>
+                                <span class="location">Notting Hill, London</span>
+                            </div>
+                            <p class="project-type">Residential</p>
+                            <p class="project-description">Bright, airy apartment maximising natural light and garden views.</p>
+                            <div class="project-tags">
+                                <span class="tag">Small Spaces</span>
+                                <span class="tag">Natural Light</span>
+                                <span class="tag">Custom Storage</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="portfolio-card animate-fade-in" data-category="commercial" data-project="covent-garden-restaurant">
+                        <div class="card-gradient commercial-gradient"></div>
+                        <div class="card-content">
+                            <div class="card-header">
+                                <h3>Covent Garden Restaurant</h3>
+                                <span class="location">Covent Garden, London</span>
+                            </div>
+                            <p class="project-type">Commercial</p>
+                            <p class="project-description">Sophisticated dining space balancing intimacy with operational efficiency.</p>
+                            <div class="project-tags">
+                                <span class="tag">Hospitality Design</span>
+                                <span class="tag">Acoustic Solutions</span>
+                                <span class="tag">Custom Lighting</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="portfolio-card animate-fade-in" data-category="residential" data-project="richmond-townhouse">
+                        <div class="card-gradient residential-gradient"></div>
+                        <div class="card-content">
+                            <div class="card-header">
+                                <h3>Richmond Family Townhouse</h3>
+                                <span class="location">Richmond, London</span>
+                            </div>
+                            <p class="project-type">Residential</p>
+                            <p class="project-description">Victorian townhouse reimagined for modern family living with garden integration.</p>
+                            <div class="project-tags">
+                                <span class="tag">Victorian Renovation</span>
+                                <span class="tag">Garden Integration</span>
+                                <span class="tag">Sustainable Design</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Project Modal -->
+    <div class="modal" id="project-modal" aria-hidden="true" role="dialog" aria-labelledby="modal-title" aria-describedby="modal-description">
+        <div class="modal-backdrop"></div>
+        <div class="modal-content">
+            <button class="modal-close" aria-label="Close modal">&times;</button>
+            <div class="modal-header">
+                <h2 id="modal-title">Project Title</h2>
+                <span id="modal-location" class="modal-location">Location</span>
+            </div>
+            <div class="modal-body">
+                <div id="modal-description" class="modal-description">
+                    <p>Detailed project description will appear here.</p>
+                </div>
+                <div class="modal-details">
+                    <h3>Services Provided</h3>
+                    <ul id="modal-services">
+                        <li>Service details will be populated</li>
+                    </ul>
+                </div>
+                <div class="modal-cta">
+                    <a href="contact.html" class="cta-button">Request Similar Scheme</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>Silkstone Studio</h3>
+                    <p>Premium Interior Design & Visualisation</p>
+                </div>
+                <div class="footer-section">
+                    <h4>Contact</h4>
+                    <p><a href="mailto:contact@silkstonestudio.com">contact@silkstonestudio.com</a></p>
+                    <p>London, United Kingdom</p>
+                </div>
+                <div class="footer-section">
+                    <h4>Follow</h4>
+                    <div class="social-links">
+                        <a href="#" aria-label="Instagram">Instagram</a>
+                        <a href="#" aria-label="LinkedIn">LinkedIn</a>
+                        <a href="#" aria-label="Pinterest">Pinterest</a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 Silkstone Studio. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
